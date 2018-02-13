@@ -194,7 +194,7 @@ processFile = (src, dst, options=_DEFAULT_OPTIONS, callback=undefined) ->
         if dst
           write result, dst, (err) ->
             if err then callback err
-            else callback undefined, result
+            else callback undefined, result, dst
         else
           callback undefined, result
 
